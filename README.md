@@ -52,6 +52,10 @@ Inicializa e configura a aplicação Flask.
 
 Contém os controllers e rotas da aplicação.
 
+### models.py
+
+Contém os models da aplicação. A conexão da aplicação com o banco é feita dentro de models.
+
 ### static/
 
 Contém arquivos estáticos, como css.

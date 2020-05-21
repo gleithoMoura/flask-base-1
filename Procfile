@@ -1,2 +1,1 @@
-python cria_bd.py
-python controllers.py
+web: python cria_bd.py; python controllers.py

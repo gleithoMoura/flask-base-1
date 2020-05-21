@@ -1,2 +1,2 @@
 worker: python cria_bd.py
-web: flask run
+web: python app.py

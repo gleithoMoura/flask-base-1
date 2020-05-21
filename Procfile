@@ -1,1 +1,2 @@
-web: python cria_bd.py; python controllers.py
+worker: python cria_bd.py
+web: python controllers.py

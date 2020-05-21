@@ -3,9 +3,11 @@
 
 {% block conteudo %}
 
-  {% for mensagem in mensagens %}
-    <p><b>{{ mensagem.usuario }}</b>: {{ mensagem.texto }}</p>
+  {% for post in posts %}
+    <h2>{{ post.titulo }}</h2>
+    <p><b>Autor: {{ post.autor }}</b></p> 
+    <p>{{ post.texto }}</p>
   {% else %}
-    <p>Nenhuma mensagem</p>
+    <p>Nenhum post</p>
   {% endfor %}
 {% endblock %}

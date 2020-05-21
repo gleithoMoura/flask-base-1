@@ -81,4 +81,4 @@ def fabio():
     return render_template('fabio.html', **context)
 
 
-app.run()
+app.run(port=80)

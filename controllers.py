@@ -33,7 +33,6 @@ def index():
     ## Inserimos tudo que foi criado no dicionário context, ele será passado para a view
     context = {'titulo': 'Página principal',
             'menu': menu,
-            
             'posts': posts,
             'presencas': presencas            
             }
@@ -119,14 +118,14 @@ def gravar_post():
     return redirect('/')
 
 
-@app.route('/presenca/gravar_presenca', methods=['presenca'])
+@app.route('/presenca/gravar_presenca', methods=['POST'])
 def gravar():
     email = request.form['email']
     presente = request.form['presente']
     resposta = request.form['resposta']
     comentarios = request.form['comentarios']
-    presenca = Presenca(email, presente, resposta, comentarios)
-    presenca.gravar_presenca()
+    pst = Presenca(email, presente, resposta, comentarios)
+    pst.gravar_presenca()
     return redirect('/')
 
 

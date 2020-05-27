@@ -4,16 +4,16 @@
 
 {% block conteudo %}
 
-<form action='/post/gravar' method='post'>
+<form action='/presenca/gravar_presenca' method='post'>
   <p>
     <label for='email'>E-mail:</label>
     <input id='email' type='text' name='email'>
   </p>
   <p>
     <label for='presente'>Presente:</label>
-    <input id='presente' type='radio' name='presente'>
-    <label for='Alsente'>Alsente:</label>
-    <input id='Alsente' type='radio' name='Alsente'>
+    <input id='presente' type='radio' name='presente' value="presente">
+    <label for='Ausente'>Ausente:</label>
+    <input id='Ausente' type='radio' name='presente' value="ausente">
   </p>
   <p>
     <label for='resposta'>Resposta:</label>

@@ -14,7 +14,7 @@ drop table if exists presenca;
 create table presenca (
   id integer primary key autoincrement,
   email string not null,
-  presente string,
+  presente string not null,
   resposta string not null,
   comentarios string
 );

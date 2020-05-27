@@ -98,6 +98,9 @@ def presenca():
     menu.append({'active': False,
                 'href': '/gleitho',
                 'texto': 'Sobre - Gleitho'})
+    menu.append({'active': False,
+                'href': '/Thiago',
+                'texto': 'Sobre - Thiago'})
     menu.append({'active': True,
                 'href': '/presenca',
                 'texto': 'Presença'})

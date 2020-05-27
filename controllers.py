@@ -33,6 +33,7 @@ def index():
     ## Inserimos tudo que foi criado no dicionário context, ele será passado para a view
     context = {'titulo': 'Página principal',
             'menu': menu,
+            
             'posts': posts,
             'presencas': presencas            
             }

@@ -30,6 +30,9 @@ def index():
                 'href': '/Thiago',
                 'texto': 'Sobre - Thiago'})
     menu.append({'active': False,
+                'href': '/Ludvin',
+                'texto': 'Sobre - Ludvin'})
+    menu.append({'active': False,
                 'href': '/presenca',
                 'texto': 'Presença'})
 
@@ -60,6 +63,9 @@ def post():
                 'href': '/Thiago',
                 'texto': 'Sobre - Thiago'})
     menu.append({'active': False,
+                'href': '/Ludvin',
+                'texto': 'Sobre - Ludvin'})
+    menu.append({'active': False,
                 'href': '/presenca',
                 'texto': 'Presença'})
 
@@ -86,6 +92,9 @@ def gleitho():
                 'href': '/Thiago',
                 'texto': 'Sobre - Thiago'})
     menu.append({'active': False,
+                'href': '/Ludvin',
+                'texto': 'Sobre - Ludvin'})
+    menu.append({'active': False,
                 'href': '/presenca',
                 'texto': 'Presença'})
 
@@ -111,6 +120,9 @@ def thiago():
                 'href': '/Thiago',
                 'texto': 'Sobre - Thiago'})
     menu.append({'active': False,
+                'href': '/Ludvin',
+                'texto': 'Sobre - Ludvin'})
+    menu.append({'active': False,
                 'href': '/presenca',
                 'texto': 'Presença'})
 
@@ -118,6 +130,34 @@ def thiago():
             'menu': menu}
 
     return render_template('Thiago.html', **context)
+
+@app.route('/Ludvin')
+def ludvin():
+    menu = []
+    ## Cada opção no menu é um dicionário
+    menu.append({'active': False, # active informa se a opção está ativa, e se estiver, destaca ela na página
+                'href': '/', # href é o caminho que deve ser aberto pela opção
+                'texto': 'Página principal'}) # texto é o texto exibido no menu para a opção
+    menu.append({'active': False,
+                'href': '/post',
+                'texto': 'Escrever post'})
+    menu.append({'active': False,
+                'href': '/gleitho',
+                'texto': 'Sobre - Gleitho'})
+    menu.append({'active': False,
+                'href': '/Thiago',
+                'texto': 'Sobre - Thiago'})
+    menu.append({'active': True,
+                'href': '/Ludvin',
+                'texto': 'Sobre - Ludvin'})
+    menu.append({'active': False,
+                'href': '/presenca',
+                'texto': 'Presença'})
+
+    context = {'titulo': 'Sobre - Ludvin',
+            'menu': menu}
+
+    return render_template('ludvin.html', **context)
 
 @app.route('/presenca')
 def presenca():
@@ -135,6 +175,9 @@ def presenca():
     menu.append({'active': False,
                 'href': '/Thiago',
                 'texto': 'Sobre - Thiago'})
+    menu.append({'active': False,
+                'href': '/Ludvin',
+                'texto': 'Sobre - Ludvin'})
     menu.append({'active': True,
                 'href': '/presenca',
                 'texto': 'Presença'})

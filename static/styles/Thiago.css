@@ -1,8 +1,18 @@
 
-p.center {
-    text-align: top;
+p.nome {
+    text-align: center;
     color: red;
   }
+
+p.RA {
+  text-align: center;
+  color: darkred; 
+}
+
+p.profissao{
+  text-align: center;
+  color: darkblue; 
+}
 
 
 
